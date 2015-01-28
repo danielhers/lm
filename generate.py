@@ -34,7 +34,7 @@ while True:
     for n in ns:
         c = counts[n]
         if n == 1:
-            ngrams = c.keys()
+            ngrams = c
         else:
             suffix = tuple(tokens[-n+1:])
             ngrams = {ngram: count for ngram, count in c.items()
